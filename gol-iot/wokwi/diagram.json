@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp32", "top": -4.9, "left": 81.4, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnIrL",
+      "top": -38.5,
+      "left": 329.9,
+      "rotate": 90,
+      "attrs": { "key": "3" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnVibL",
+      "top": 220.7,
+      "left": -121.3,
+      "rotate": 90,
+      "attrs": { "key": "2" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnIrR",
+      "top": 211.1,
+      "left": 329.9,
+      "rotate": 90,
+      "attrs": { "key": "4" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnVibR",
+      "top": -38.5,
+      "left": -121.3,
+      "rotate": 90,
+      "attrs": { "xray": "", "key": "1" }
+    },
+    { "type": "wokwi-led", "id": "ledL", "top": 75.6, "left": 323.4, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-led", "id": "ledR", "top": 66.4, "left": -181, "rotate": 270, "attrs": {} }
+  ],
+  "connections": [
+    [ "btnIrL:1", "esp32:18", "green", [] ],
+    [ "btnIrL:2", "esp32:GND", "black", [] ],
+    [ "btnVibL:1", "esp32:19", "green", [] ],
+    [ "btnVibL:2", "esp32:GND", "black", [] ],
+    [ "btnIrR:1", "esp32:21", "green", [] ],
+    [ "btnIrR:2", "esp32:GND", "black", [] ],
+    [ "btnVibR:1", "esp32:22", "green", [] ],
+    [ "btnVibR:2", "esp32:GND", "black", [] ],
+    [ "esp32:25", "ledL:A", "purple", [] ],
+    [ "ledL:C", "esp32:GND", "black", [] ],
+    [ "esp32:26", "ledR:A", "purple", [] ],
+    [ "ledR:C", "esp32:GND", "black", [] ],
+    [ "btnVibR:1.l", "esp32:D18", "blue", [ "h278.4", "v124.8" ] ],
+    [ "btnVibR:2.r", "esp32:GND.2", "black", [ "v0" ] ],
+    [ "btnVibL:1.l", "esp32:D19", "limegreen", [ "h288", "v-143.9" ] ],
+    [ "ledR:C", "esp32:GND.2", "black", [ "h48", "v47.7" ] ],
+    [ "ledL:C", "esp32:GND.1", "black", [ "h-19.2", "v48.4" ] ],
+    [ "btnVibL:2.r", "esp32:GND.2", "black", [ "v19.4", "h163", "v-153.6" ] ],
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ledR:A", "esp32:D25", "red", [ "h0" ] ],
+    [ "ledL:A", "esp32:D26", "red", [ "h-249.6", "v-9.6" ] ],
+    [ "esp32:D21", "btnIrL:1.l", "gray", [ "h143.7", "v-125.2", "h48" ] ],
+    [ "esp32:D22", "btnIrR:1.l", "violet", [ "h66.9", "v143.7", "h124.8" ] ],
+    [ "btnIrL:2.r", "esp32:GND.1", "black", [ "v0" ] ],
+    [ "btnIrR:2.r", "esp32:GND.1", "black", [ "v9.8", "h-48.2", "v-134.3" ] ]
+  ],
+  "dependencies": {}
+}
