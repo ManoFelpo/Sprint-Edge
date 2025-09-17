@@ -99,3 +99,8 @@ flowchart LR
 
 ## Licença
 MIT
+
+---
+
+## Video Apresentação
+[➡️ Acesso à apresentação](https://youtu.be/dXNFZZSkCZk)
