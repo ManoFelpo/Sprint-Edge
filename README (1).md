@@ -18,7 +18,8 @@ Implementar a arquitetura de uma aplicação IoT capaz de coletar e transmitir, 
 ---
 
 ## Arquitetura
-```mermaid
+```
+mermaid
 flowchart LR
   subgraph Campo
     IRL[IR – Esquerda] --> ESP32
