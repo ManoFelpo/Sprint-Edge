@@ -135,4 +135,4 @@ MIT
 ---
 
 ## Vídeo de Apresentação
-[🎥 Acesso à apresentação]([https://youtu.be/dXNFZZSkCZk](https://youtu.be/CnNR35LjmcM))
+[🎥 Acesso à apresentação](https://youtu.be/CnNR35LjmcM)
